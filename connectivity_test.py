@@ -57,7 +57,7 @@ def tcp_port_test(host, port):
             "Status": "Error",
             "Message": f"[Exception]{e.__class__.__name__}: {e}"
         }
-        return f"[Exception]{e.__class__.__name__}: {e}"
+        print(f"[Exception]{e.__class__.__name__}: {e}")
 
     finally:
         result["host"] = host
